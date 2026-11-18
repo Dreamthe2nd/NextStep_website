@@ -1,0 +1,30 @@
+[
+  {
+    "name": "IRIS National Fair (Initiative for Research & Innovation in STEM)",
+    "eligibility": "Classes 5–12 · National (India)",
+    "deadline": "August – September (Annual Cycle)",
+    "focusAreas": "STEM Research, Engineering, AI, Life Sciences (ISEF Pathway)",
+    "howToApply": "Submit an original research synopsis via irisnationalfair.org to qualify for Regeneron ISEF. Verify current rules on the official site."
+  },
+  {
+    "name": "CBSE Regional & National Science Exhibition",
+    "eligibility": "Classes 6–11 · CBSE Affiliated Schools",
+    "deadline": "October – November (Check CBSE Circular)",
+    "focusAreas": "Science & Technology for Society, Computational Thinking, Health",
+    "howToApply": "Register through your school science coordinator on the official CBSE Academic portal."
+  },
+  {
+    "name": "IIT Hyderabad / IIIT-H Student Outreach & Young Researchers",
+    "eligibility": "Classes 9–12 · Hyderabad & Hybrid",
+    "deadline": "Rolling / Summer & Winter Cohorts",
+    "focusAreas": "AI/ML, Robotics, Embedded Systems, Human-Centered Computing",
+    "howToApply": "Monitor IIIT-H & IITH outreach announcements for high-school bootcamps and lab visits."
+  },
+  {
+    "name": "INSPIRE Awards – MANAK (DST, Govt. of India)",
+    "eligibility": "Classes 6–10 · Ages 10–15",
+    "deadline": "June – September (Annual School Nomination)",
+    "focusAreas": "Grassroots Technological Innovation & Prototype Development",
+    "howToApply": "Nominate original ideas through your school headmaster on the E-MIAS portal."
+  }
+]

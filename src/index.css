@@ -1,0 +1,176 @@
+@import "@fontsource/inter-tight/400.css";
+@import "@fontsource/inter-tight/500.css";
+@import "@fontsource/inter-tight/600.css";
+@import "@fontsource/inter-tight/700.css";
+@import "@fontsource/instrument-serif/400.css";
+@import "@fontsource/instrument-serif/400-italic.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #09090b;
+  --color-matte: #121215;
+  --color-gold: #d9b56d;
+  --color-ivory: #faf8f2;
+  --font-sans: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+:root {
+  --bg: #09090b;
+  --fg: #faf8f2;
+  --muted-fg: #a1a1aa;
+  --hairline: rgba(250, 248, 242, 0.08);
+  --surface: #121215;
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  margin: 0;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(217, 181, 109, 0.28);
+  color: #faf8f2;
+}
+
+:focus-visible {
+  outline: 2px solid #d9b56d;
+  outline-offset: 2px;
+}
+
+/* Precision architectural grid texture */
+.arch-grid {
+  background-image:
+    linear-gradient(to right, rgba(250, 248, 242, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(250, 248, 242, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Film grain overlay (2% opacity SVG noise) */
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+}
+
+/* Tactile click ripple */
+@keyframes ns-ripple {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(3.2);
+    opacity: 0;
+  }
+}
+
+.ns-ripple {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  animation: ns-ripple 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Preloader step trace */
+@keyframes ns-step-draw {
+  from {
+    stroke-dashoffset: 180;
+    opacity: 0.2;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes ns-bar {
+  from {
+    width: 0%;
+    opacity: 0.4;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.step-draw {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: ns-step-draw 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Edge-masked ticker */
+@keyframes ns-marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ns-marquee 42s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Burnished gold / ivory shimmer */
+@keyframes ns-chrome {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.chrome-text {
+  background: linear-gradient(
+    105deg,
+    #71717a 0%,
+    #faf8f2 24%,
+    #d9b56d 48%,
+    #faf8f2 72%,
+    #71717a 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: ns-chrome 3.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker,
+  .chrome-text,
+  .ns-ripple,
+  .step-draw {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+  .chrome-text {
+    background: none;
+    color: #faf8f2;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
