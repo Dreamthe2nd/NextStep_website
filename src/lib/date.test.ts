@@ -31,10 +31,14 @@ describe('getDeadlineStatus', () => {
 });
 
 describe('sortByStatus', () => {
-  it('puts rolling before closed for current data', () => {
+  it('puts closing-soon/open/rolling before closed for current data', () => {
     const sorted = sortByStatus(localData.opportunities, NOW);
-    expect(sorted[0].id).toBe('build-with-us');
-    expect(sorted).toHaveLength(6);
+    expect(sorted[0].id).toBe('inaio-2027');
+    expect(sorted).toHaveLength(26);
+    const kinds = sorted.map((o) => getDeadlineStatus(o.deadlineISO, NOW).kind);
+    const firstClosed = kinds.indexOf('closed');
+    const lastRolling = kinds.lastIndexOf('rolling');
+    expect(firstClosed).toBeGreaterThan(lastRolling);
   });
 });
 

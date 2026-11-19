@@ -3,7 +3,7 @@ import { buildIcs, googleCalendarUrl } from './calendar';
 import { localData } from '@/data/provider';
 
 describe('calendar helpers', () => {
-  const opp = localData.opportunities[0]; // Birdspiracy 2026-10-22
+  const opp = localData.opportunities.find((o) => o.id === 'birdspiracy-2026')!;
 
   it('builds valid VCALENDAR with VALARM and escaped commas', () => {
     const ics = buildIcs(opp);

@@ -7,6 +7,7 @@ export type FilterGroup =
   | 'AI & Innovation'
   | 'STEM & Research'
   | 'Entrepreneurship'
+  | 'MUN & Leadership'
   | 'Scholarships'
   | 'Community';
 

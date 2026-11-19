@@ -15,6 +15,7 @@ const FILTER_CATEGORIES: Array<'All' | FilterGroup> = [
   'AI & Innovation',
   'STEM & Research',
   'Entrepreneurship',
+  'MUN & Leadership',
   'Scholarships',
   'Community',
 ];

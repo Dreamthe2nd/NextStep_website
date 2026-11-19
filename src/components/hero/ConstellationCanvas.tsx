@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import type { Opportunity } from '@/data/schema';
 import { getSharedStars } from '@/lib/stars';
-import { getDeadlineStatus, statusLabel } from '@/lib/date';
+import { getDeadlineStatus, sortByStatus, statusLabel } from '@/lib/date';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { useCursorPreview } from '@/hooks/useCursorPreview';
 
@@ -51,13 +51,15 @@ export function ConstellationCanvas({
       { nx: 0.18, ny: 0.65 },
       { nx: 0.82, ny: 0.64 },
     ];
-    return opportunities.map((opp, idx) => {
-      const base = anchors[idx % anchors.length];
-      const h = hashSeed(opp.id);
-      const jx = ((h % 100) / 100 - 0.5) * 0.04;
-      const jy = (((h >> 8) % 100) / 100 - 0.5) * 0.04;
-      return { opp, nx: base.nx + jx, ny: base.ny + jy };
-    });
+    return sortByStatus(opportunities)
+      .slice(0, 6)
+      .map((opp, idx) => {
+        const base = anchors[idx % anchors.length];
+        const h = hashSeed(opp.id);
+        const jx = ((h % 100) / 100 - 0.5) * 0.04;
+        const jy = (((h >> 8) % 100) / 100 - 0.5) * 0.04;
+        return { opp, nx: base.nx + jx, ny: base.ny + jy };
+      });
   }, [opportunities]);
 
   useEffect(() => {

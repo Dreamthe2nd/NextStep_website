@@ -1,21 +1,415 @@
 [
   {
-    "id": "birdspiracy-2026",
+    "id": "inaio-2027",
     "indexLabel": "01",
-    "title": "Birdspiracy AI Competition 2026",
-    "category": "AI & innovation",
+    "title": "Indian National AI Olympiad (INAIO) 2027",
+    "category": "AI Olympiad",
     "filterGroup": "AI & Innovation",
-    "eligibility": "Classes 9–12 · Online · Free",
-    "targetClasses": "Classes 9–12",
+    "eligibility": "School students · Exam centres · ₹300 + GST",
+    "targetClasses": "School students",
+    "format": "Stage 1 OMR Centres · ₹300 + GST",
+    "deadlineLabel": "November 22, 2026",
+    "deadlineISO": "2026-11-22",
+    "copy": "National AI olympiad organized with ACM India & iKDD leading to Team India at INAIO 2027 in Singapore. Stage 1 OMR exam takes place December 13, 2026.",
+    "url": "https://manageexam.com/INAIO/",
+    "checklist": [
+      "Confirm whether your school is registered as an authorized examination centre (by Nov 22, 2026).",
+      "Enroll online at manageexam.com/INAIOStudents, upload documents, and pay ₹300 + GST by Nov 22, 2026.",
+      "Review curriculum and sample problem sets ahead of the Dec 13, 2026 Stage 1 OMR exam."
+    ]
+  },
+  {
+    "id": "nasa-stem-gateway-2026",
+    "indexLabel": "02",
+    "title": "NASA STEM Gateway Virtual Events",
+    "category": "Aerospace · NASA",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Grades 6–12 · Virtual · Free",
+    "targetClasses": "Grades 6–12",
+    "format": "Virtual · Free",
+    "deadlineLabel": "November 25, 2026",
+    "deadlineISO": "2026-11-25",
+    "copy": "Free virtual NASA sessions & challenges. Surprisingly STEM (Dec 3; reg by Nov 25/30) and Dream with Us Design Challenge (by Dec 8) are open internationally; Internships Webinar & Goddard CTE Day (by Dec 2) are US-citizen only.",
+    "url": "https://stemgateway.nasa.gov/public/s/explore-opportunities",
+    "checklist": [
+      "Filter by Activity Format: Virtual and Citizenship Requirements: None for international-open events.",
+      "Register by Nov 25 (11:59 PM ET) / Nov 30 for Surprisingly STEM: Electronics Technicians (Dec 3).",
+      "Check Dream with Us Design Challenge (Grades 6–12, closes Dec 8, 2026) and create a NASA Gateway account."
+    ]
+  },
+  {
+    "id": "cd-mun-2026",
+    "indexLabel": "03",
+    "title": "Carpe Diem MUN (C.D MUN 2026)",
+    "category": "Conference · MUN",
+    "filterGroup": "MUN & Leadership",
+    "eligibility": "Grades 9–12 (Hybrid) · Hyderabad · ₹500",
+    "targetClasses": "Grades 9–12",
+    "format": "Hybrid (Online + Hyderabad) · ₹500",
+    "deadlineLabel": "November 29, 2026",
+    "deadlineISO": "2026-11-29",
+    "copy": "Delegate applications for C.D MUN 2026: Days 1–2 online committee sessions (Dec 18–19) and an in-person Day 3 Grand Finale in Hyderabad (Dec 20) for Grades 9–12 across 7 committees.",
+    "url": "https://gavelling.com/conferences/cdmun2026",
+    "checklist": [
+      "Register individually on Gavelling by Nov 29, 2026 (₹500 per delegate).",
+      "Select Hybrid track (Grades 9–12 for in-person Hyderabad finale) or Online track (UG years 1–4).",
+      "Choose from DISEC, Global AI Governance Summit, JCC 1/2, Lok Sabha, UN Women, or UNHRC."
+    ]
+  },
+  {
+    "id": "zco-2027",
+    "indexLabel": "04",
+    "title": "Zonal Computing Olympiad (ZCO-2027)",
+    "category": "Computing Olympiad",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Up to Class 12 · 35 Indian Cities · ₹472",
+    "targetClasses": "Up to Class 12",
+    "format": "In-Person Centres · ₹472",
+    "deadlineLabel": "December 1, 2026",
+    "deadlineISO": "2026-12-01",
+    "copy": "First round of the Indian Computing Olympiad (IARCS & CodeChef). Online registration closes at 9:00 PM IST on Dec 1 for the Dec 12, 2026 programming test (C, C++, Java, Python).",
+    "url": "https://www.iarcs.org.in/inoi/current.php",
+    "checklist": [
+      "Complete online registration and pay ₹472 (₹400 + GST) before Dec 1, 2026 at 9:00 PM IST.",
+      "Download your Admit Card (~5 days before) and verify your city centre for Dec 12 (2:00–5:00 PM).",
+      "Practice on ICO Online Study Material and CodeChef ZCO archives ahead of INOI-2027 (Feb 6, 2027)."
+    ]
+  },
+  {
+    "id": "scholastic-awards-2027",
+    "indexLabel": "05",
+    "title": "Scholastic Art & Writing Awards 2027",
+    "category": "Arts & Writing",
+    "filterGroup": "Community",
+    "eligibility": "Grades 7–12 (Age 13+) · Regional Rules",
+    "targetClasses": "Grades 7–12",
+    "format": "Online · US/Canada Eligibility",
+    "deadlineLabel": "December 1, 2026",
+    "deadlineISO": "2026-12-01",
+    "copy": "Prestigious creative arts & writing awards across 20+ categories with regional deadlines starting Dec 1, 2026 ($15/entry with fee waivers). Verify US/Canada/at-large residency rules before submitting.",
+    "url": "https://www.artandwriting.org/awards/how-to-enter/calendar/",
+    "checklist": [
+      "Check official Region Locator and 2027 eligibility rules (U.S., U.S. territories/bases, or Canada).",
+      "Create an account at portal.artandwriting.org, link your educator, and obtain guardian consent.",
+      "Upload entries and submit fee ($15/entry) or fee waiver before your regional cutoff."
+    ]
+  },
+  {
+    "id": "univario-mun-2026",
+    "indexLabel": "06",
+    "title": "Univario International MUN 2026",
+    "category": "Conference · MUN",
+    "filterGroup": "MUN & Leadership",
+    "eligibility": "All levels · English & Hindi · Free",
+    "targetClasses": "All levels",
     "format": "Online · Free",
-    "deadlineLabel": "October 22, 2026",
-    "deadlineISO": "2026-10-22",
-    "copy": "Identify a real community problem and propose how AI could help in a short presentation. Check the organiser’s current rules before entering.",
-    "url": "https://birdspiracy.com/"
+    "deadlineLabel": "December 10, 2026",
+    "deadlineISO": "2026-12-10",
+    "copy": "Beginner-friendly online MUN offering 5 committees in both English and Hindi with 100 expected delegates on Dec 11–13, 2026.",
+    "url": "https://mymun.com/conferences/univario-international-mun-2026",
+    "checklist": [
+      "Apply on mymun before Dec 5 (Chairs) or Dec 10, 2026 (Delegates & Head Delegates).",
+      "Choose your preferred English or Hindi committee track.",
+      "Prepare country stance and resolution drafts before the Dec 11–13 conference."
+    ]
+  },
+  {
+    "id": "rsi-india-2027",
+    "indexLabel": "07",
+    "title": "Research Science Initiative India (RSI-India)",
+    "category": "Research · IISc",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Class 11 (Indian citizens) · IISc Bengaluru · Free",
+    "targetClasses": "Class 11",
+    "format": "Residential · IISc · Free",
+    "deadlineLabel": "December 14, 2026",
+    "deadlineISO": "2026-12-14",
+    "copy": "Free 6-week mentored summer research program (June 6–July 17, 2027) at IISc Bengaluru by CEE. Includes coursework, individual research mentorship, paper, talk, and free room & board.",
+    "url": "https://cee.slideroom.com/",
+    "checklist": [
+      "Apply individually on CEE SlideRoom by Dec 14, 2026 (no school nomination required).",
+      "Prepare personal statements, STEM achievements, school transcripts, and teacher recommendations.",
+      "Confirm Class 10 completion and Indian citizenship; plan for travel & medical insurance if selected."
+    ]
+  },
+  {
+    "id": "dlmun-climate-2026",
+    "indexLabel": "08",
+    "title": "DLMUN Climate Summit VII",
+    "category": "Conference · MUN",
+    "filterGroup": "MUN & Leadership",
+    "eligibility": "High school & university · Online · Free",
+    "targetClasses": "High school & university",
+    "format": "Online · Free",
+    "deadlineLabel": "December 18, 2026",
+    "deadlineISO": "2026-12-18",
+    "copy": "Free online climate-focused MUN (Dec 18–20, 2026) with 4 beginner committees; conference policy resources are shared with UNEA, UNFCCC, and ECOSOC.",
+    "url": "https://mymun.com/conferences/dlmuncs-vii-2026",
+    "checklist": [
+      "Apply on mymun by Dec 18, 2026 (Delegate, Head Delegate, Observer, or Faculty Advisor).",
+      "Prepare climate policy positions for the Dec 19–20 committee sessions.",
+      "Top delegates may be invited to future DLMUN chairing or secretariat roles."
+    ]
+  },
+  {
+    "id": "hyderabad-hackathons-2026",
+    "indexLabel": "09",
+    "title": "Hyderabad & Online Hackathons Hub",
+    "category": "Hackathons",
+    "filterGroup": "AI & Innovation",
+    "eligibility": "Students · Hyderabad & Online",
+    "targetClasses": "Student builders",
+    "format": "IIT-H / Hyderabad & Online",
+    "deadlineLabel": "December 18, 2026",
+    "deadlineISO": "2026-12-18",
+    "copy": "Curated Hyderabad & online hackathons: Build Your Bharat at IIT Hyderabad (until Nov 21), HackWithAditya / CMR Hackfest 4.0 (Nov 25), Arbiter Hacks V1 (until Dec 20), and Hack with Hyderabad 4.0 (starts Dec 18).",
+    "url": "https://techsnap.in/hackathons/hack-with-hyderabad-4-0-35e80cb9",
+    "checklist": [
+      "Check immediate deadlines: Build Your Bharat at IIT-H (Nov 21) and CMR Hackfest 4.0 (Nov 25).",
+      "Monitor Hack with Hyderabad 4.0 (starts Dec 18, 10 AM IST) for venue and registration link.",
+      "Verify team size (usually 1–5) and school-age eligibility rules on each hackathon's official page."
+    ]
+  },
+  {
+    "id": "hrzmun-2026",
+    "indexLabel": "10",
+    "title": "HRZMUN 2026 (Horizon MUN)",
+    "category": "Conference · MUN",
+    "filterGroup": "MUN & Leadership",
+    "eligibility": "Middle & high school · Online · Free",
+    "targetClasses": "All levels",
+    "format": "Online · Free",
+    "deadlineLabel": "December 24, 2026",
+    "deadlineISO": "2026-12-24",
+    "copy": "Free online Model UN conference (Dec 26–27, 2026) welcoming 300 delegates across 8 UN committees (including 6 beginner committees) in English.",
+    "url": "https://mymun.com/conferences/hrzmun-2026",
+    "checklist": [
+      "Submit your Delegate, Chair, or Observer application on mymun by Dec 24, 2026.",
+      "Choose from UNESCO, UNICEF, UNSC, UNDP, UNEP, WHO, UNHRC, or FAO.",
+      "Prepare your country research in English for the Dec 26–27 sessions."
+    ]
+  },
+  {
+    "id": "oremun-2027",
+    "indexLabel": "11",
+    "title": "Open Relations & Engagement MUN",
+    "category": "Conference · MUN",
+    "filterGroup": "MUN & Leadership",
+    "eligibility": "High school & university · Online · Free",
+    "targetClasses": "High school & university",
+    "format": "Online · Free",
+    "deadlineLabel": "January 3, 2027",
+    "deadlineISO": "2027-01-03",
+    "copy": "Free online MUN conference (Jan 9–10, 2027) expecting 300 delegates across 9 committees (8 beginner-friendly) including UNGA, UNICEF, UNSC, UNESCO, and WHO.",
+    "url": "https://mymun.com/conferences/oremun-2026",
+    "checklist": [
+      "Apply as a Delegate on mymun before Jan 3, 2027 (Chair applications closed Nov 15).",
+      "Select your preferred committee among the 9 UN councils.",
+      "Join the conference's delegate group and prepare opening speeches for Jan 9–10, 2027."
+    ]
+  },
+  {
+    "id": "conrad-challenge-2027",
+    "indexLabel": "12",
+    "title": "The Conrad Challenge 2026–2027",
+    "category": "Space & Innovation",
+    "filterGroup": "AI & Innovation",
+    "eligibility": "Ages 13–18 (Teams 2–5) · Online",
+    "targetClasses": "Ages 13–18",
+    "format": "Online · Fin. Aid Dec 3",
+    "deadlineLabel": "January 7, 2027",
+    "deadlineISO": "2027-01-07",
+    "copy": "Global innovation challenge across Aerospace, Cyber-Tech, Energy/Environment, Health, and Water. Phase 2 Innovation Stage closes Jan 7, 2027 (financial aid closes Dec 3, 2026; $499/team).",
+    "url": "https://conrad.spacecenter.org/",
+    "checklist": [
+      "Note: Phase 1 Activation closed Oct 30, 2026; advancing teams complete Phase 2 deliverables.",
+      "Apply for Innovation Stage fee financial aid by Dec 3, 2026 (11:59 PM CST) if needed.",
+      "Submit Investor Pitch, team video, Business Plan, and $499 team fee by Jan 7, 2027."
+    ]
+  },
+  {
+    "id": "iitm-school-connect-2027",
+    "indexLabel": "13",
+    "title": "IIT Madras School Connect",
+    "category": "University Course",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Classes 9–12 (Partner schools) · Online",
+    "targetClasses": "Classes 9–12",
+    "format": "8-Week Online · IITM CODE",
+    "deadlineLabel": "January 8, 2027",
+    "deadlineISO": "2027-01-08",
+    "copy": "8-week university-level introductory certificate courses offered by IIT Madras CODE for Classes 9–12 through partner schools. Jan 2027 batch closes Jan 8, 2027.",
+    "url": "https://www.yriscience.com/blog/research-programs-students-chennai",
+    "checklist": [
+      "Verify with your school whether it is registered as an IIT Madras School Connect partner.",
+      "Register for the Jan 2027 batch before Jan 8, 2027 (next batch opens April 2027).",
+      "Complete weekly assignments and exams to earn the IIT Madras CODE e-certificate."
+    ]
+  },
+  {
+    "id": "diamond-challenge-2027",
+    "indexLabel": "14",
+    "title": "Diamond Challenge 2027",
+    "category": "Entrepreneurship",
+    "filterGroup": "Entrepreneurship",
+    "eligibility": "Ages 14–18 / High school · Global",
+    "targetClasses": "Ages 14–18",
+    "format": "Global · $100K Prize Pool",
+    "deadlineLabel": "January 14, 2027",
+    "deadlineISO": "2027-01-14",
+    "copy": "Global entrepreneurship competition by University of Delaware Horn Entrepreneurship with a $100K prize pool for business and social venture concepts. Written concept & pitch due Jan 14, 2027.",
+    "url": "https://diamondchallenge.org/competition/",
+    "checklist": [
+      "Form a high school team and choose either Business Innovation or Social Innovation track.",
+      "Download the Curriculum Roadmap and confirm exact round dates inside Competitors' Login.",
+      "Prepare and submit your written concept and video pitch by Jan 14, 2027."
+    ]
+  },
+  {
+    "id": "biomimicry-youth-2027",
+    "indexLabel": "15",
+    "title": "Biomimicry Youth Design Challenge",
+    "category": "Engineering Design",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Grades 6–12 (Teams 2–8) · Online · Free",
+    "targetClasses": "Grades 6–12",
+    "format": "Online · Free",
+    "deadlineLabel": "January 31, 2027",
+    "deadlineISO": "2027-01-31",
+    "copy": "Free nature-inspired engineering design challenge for teams of 2–8 students with an adult coach (18+). Design biological solutions aligned with UN SDGs; confirm 2027 cycle dates on host portal.",
+    "url": "https://borderless.so/blog/engineering-competitions-for-international-students-in-every-discipline",
+    "checklist": [
+      "Form a team of 2–8 students (Grades 6–12) with a school teacher or adult coach (18+).",
+      "Verify the upcoming 2027 cycle registration window (historically closes late January).",
+      "Prepare a written and visual portfolio proposing a nature-inspired engineering solution."
+    ]
+  },
+  {
+    "id": "nss-space-2027",
+    "indexLabel": "16",
+    "title": "NSS Space Settlement Contest 2027",
+    "category": "Space Design",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Up to Grade 12 · Online · $15 (waivable)",
+    "targetClasses": "Up to Grade 12",
+    "format": "Online · $5,000 Scholarship",
+    "deadlineLabel": "February 15, 2027",
+    "deadlineISO": "2027-02-15",
+    "copy": "Design a permanent orbital free-space settlement through engineering models, research, or artwork. Entries due Feb 15, 2027 ($15 fee with hardship waivers; $5,000 top scholarship prize).",
+    "url": "https://nss.org/nss-space-settlement-contest/about-the-contest/",
+    "checklist": [
+      "Prepare an original free-space (orbital, non-planetary) settlement design PDF (<=50 pages).",
+      "Strictly cite any AI-generated graphics; AI-generated text is prohibited for Literary Merit.",
+      "Submit via AwardForce portal (opens December) with $15 fee or hardship waiver by Feb 15, 2027."
+    ]
+  },
+  {
+    "id": "blue-ocean-2027",
+    "indexLabel": "17",
+    "title": "Blue Ocean Competition 2027",
+    "category": "Entrepreneurship",
+    "filterGroup": "Entrepreneurship",
+    "eligibility": "High school / Ages 14–18 · Online · Free",
+    "targetClasses": "Ages 14–18",
+    "format": "Online · Free",
+    "deadlineLabel": "February 21, 2027",
+    "deadlineISO": "2027-02-21",
+    "copy": "Free global virtual entrepreneurship competition where high schoolers (solo or teams up to 5) pitch a new-market business concept in a 5-minute video by Feb 21, 2027.",
+    "url": "https://blueoceancompetition.org/",
+    "checklist": [
+      "Register solo or in a team of up to 5 students (across schools allowed) using a personal email.",
+      "Complete the free Blue Ocean Mini-Course and follow the official pitch scoring rubric.",
+      "Upload your 5-minute YouTube pitch + video file before Feb 21, 2027 (midnight local time)."
+    ]
+  },
+  {
+    "id": "ashoka-ysp-2027",
+    "indexLabel": "18",
+    "title": "Ashoka Young Scholars Programme (YSP)",
+    "category": "Pre-College & Aid",
+    "filterGroup": "Scholarships",
+    "eligibility": "Entering Grades 9–12 · Up to 100% Aid",
+    "targetClasses": "Grades 9–12",
+    "format": "Apps Open Dec 1 · Aid Mar 14",
+    "deadlineLabel": "March 14, 2027",
+    "deadlineISO": "2027-03-14",
+    "copy": "Ashoka University's pre-college summer programme for students entering Grades 9–12 in May/June 2027. Applications open Dec 1, 2026 (₹1,000 fee); merit-cum-need aid up to 100% due Mar 14, 2027.",
+    "url": "https://www.oneyoungindia.com/resources/merit-scholarships-for-student-programmes",
+    "checklist": [
+      "Start your YSP application when the portal opens on Dec 1, 2026 (₹1,000 application fee).",
+      "Complete the merit-cum-need scholarship section by Mar 14, 2027 with a 250-word essay & income docs.",
+      "Verify full programme fees, session dates, and residential format on Ashoka's official YSP page."
+    ]
+  },
+  {
+    "id": "build-with-us",
+    "indexLabel": "19",
+    "title": "Build something with us",
+    "category": "Community",
+    "filterGroup": "Community",
+    "eligibility": "Student-led · Hyderabad & online",
+    "targetClasses": "Student-led",
+    "format": "Hyderabad & online",
+    "deadlineLabel": "Open Rolling",
+    "deadlineISO": null,
+    "copy": "Help research opportunities, write clear guides, create content or make NextStep a more useful place for students.",
+    "url": "#team"
+  },
+  {
+    "id": "isro-yuvika-watch",
+    "indexLabel": "20",
+    "title": "ISRO YUVIKA (2027 Cycle Watch)",
+    "category": "Space · ISRO",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Class 9 (India) · NRSC Hyderabad & Centres",
+    "targetClasses": "Class 9",
+    "format": "Residential · Watch Feb 2027",
+    "deadlineLabel": "Open Rolling",
+    "deadlineISO": null,
+    "copy": "Two-week residential Young Scientist Programme hosted across 9 ISRO/DoS centres including NRSC Hyderabad. 2026 cycle opened late February; note ISRO regular internships are UG/PG/PhD & NASA OSTEM is US-only.",
+    "url": "https://www.isro.gov.in/Young_Scientist_YUVIKA2026.html",
+    "checklist": [
+      "Monitor isro.gov.in in late February 2027 for the YUVIKA-2027 notification (Class 9 students).",
+      "Expect a two-week residential programme in May across 9 ISRO centres including Hyderabad.",
+      "Note: NASA OSTEM internships require U.S. citizenship, and ISRO regular internships require UG/PG/PhD."
+    ]
+  },
+  {
+    "id": "ieom-robo-2026",
+    "indexLabel": "21",
+    "title": "IEOM India 2026 Robo Competition",
+    "category": "Robotics",
+    "filterGroup": "STEM & Research",
+    "eligibility": "Grades 6–12 (Teams 2–5) · Bengaluru",
+    "targetClasses": "Grades 6–12",
+    "format": "In-Person · Live Demo",
+    "deadlineLabel": "November 7, 2026",
+    "deadlineISO": "2026-11-07",
+    "copy": "Design, build, and program a working robot for live demonstration and a 5–10 minute presentation at the 6th IEOM India Conference (Nov 5–7, 2026 completed; watch for next cycle).",
+    "url": "https://ieomsociety.org/india2026/robo-competition/",
+    "checklist": [
+      "Note: 2026 conference ran Nov 5–7, 2026 at BESTIU/Bengaluru; check IEOM for the 2027 edition.",
+      "Prepare a 2–4 page Project Summary aligned with 'Smart Robotic Solutions for a Better World'.",
+      "Check participant registration fees for school teams on the next IEOM India conference portal."
+    ]
+  },
+  {
+    "id": "tata-pankh-2026",
+    "indexLabel": "22",
+    "title": "Tata Capital Pankh Scholarship",
+    "category": "Scholarship",
+    "filterGroup": "Scholarships",
+    "eligibility": "Classes 11–12 · Online application",
+    "targetClasses": "Classes 11–12",
+    "format": "Online application",
+    "deadlineLabel": "October 26, 2026",
+    "deadlineISO": "2026-10-26",
+    "copy": "Scholarship support for eligible students. Review the latest academic, family-income and documentation criteria before applying.",
+    "url": "https://www.buddy4study.com/article/the-tata-capital-pankh-scholarship"
   },
   {
     "id": "seva-first-2026",
-    "indexLabel": "02",
+    "indexLabel": "23",
     "title": "Seva First Innovation Challenge",
     "category": "Innovation",
     "filterGroup": "STEM & Research",
@@ -28,8 +422,22 @@
     "url": "https://sevafirst.mic.gov.in/"
   },
   {
+    "id": "birdspiracy-2026",
+    "indexLabel": "24",
+    "title": "Birdspiracy AI Competition 2026",
+    "category": "AI & innovation",
+    "filterGroup": "AI & Innovation",
+    "eligibility": "Classes 9–12 · Online · Free",
+    "targetClasses": "Classes 9–12",
+    "format": "Online · Free",
+    "deadlineLabel": "October 22, 2026",
+    "deadlineISO": "2026-10-22",
+    "copy": "Identify a real community problem and propose how AI could help in a short presentation. Check the organiser’s current rules before entering.",
+    "url": "https://birdspiracy.com/"
+  },
+  {
     "id": "gitam-ic-2026",
-    "indexLabel": "03",
+    "indexLabel": "25",
     "title": "GITAM Innovation Challenge 2026",
     "category": "Entrepreneurship",
     "filterGroup": "Entrepreneurship",
@@ -43,7 +451,7 @@
   },
   {
     "id": "ieee-temsmet-2026",
-    "indexLabel": "04",
+    "indexLabel": "26",
     "title": "IEEE TEMSMET School Innovation Challenge",
     "category": "STEM",
     "filterGroup": "STEM & Research",
@@ -54,33 +462,5 @@
     "deadlineISO": "2026-10-15",
     "copy": "Showcase a science or technology idea, model or prototype. Check event dates, fees and venue details on the organiser’s page.",
     "url": "https://temsmet2026.sithyd.edu.in/pre-university-stem"
-  },
-  {
-    "id": "tata-pankh-2026",
-    "indexLabel": "05",
-    "title": "Tata Capital Pankh Scholarship",
-    "category": "Scholarship",
-    "filterGroup": "Scholarships",
-    "eligibility": "Classes 11–12 · Online application",
-    "targetClasses": "Classes 11–12",
-    "format": "Online application",
-    "deadlineLabel": "October 26, 2026",
-    "deadlineISO": "2026-10-26",
-    "copy": "Scholarship support for eligible students. Review the latest academic, family-income and documentation criteria before applying.",
-    "url": "https://www.buddy4study.com/article/the-tata-capital-pankh-scholarship"
-  },
-  {
-    "id": "build-with-us",
-    "indexLabel": "06",
-    "title": "Build something with us",
-    "category": "Community",
-    "filterGroup": "Community",
-    "eligibility": "Student-led · Hyderabad & online",
-    "targetClasses": "Student-led",
-    "format": "Hyderabad & online",
-    "deadlineLabel": "Open Rolling",
-    "deadlineISO": null,
-    "copy": "Help research opportunities, write clear guides, create content or make NextStep a more useful place for students.",
-    "url": "#team"
   }
 ]
