@@ -1,0 +1,62 @@
+{
+  "eyebrow": "03 / THE FOUNDING TEAM",
+  "headline": "Good things grow when we build them together.",
+  "formUrl": "https://forms.gle/Fvr3aaoTQiGvvugUA",
+  "pillars": [
+    { "key": "Content Head & Creators", "note": "Turn opportunities into useful posts, carousels & Reels." },
+    { "key": "Opportunity Researchers", "note": "Find & verify competitions, scholarships, and research programs." },
+    { "key": "Writers", "note": "Write clear guides, captions, and student resources." },
+    { "key": "Social Media & Community", "note": "Help manage Instagram and grow the student community." }
+  ],
+  "members": [
+    {
+      "id": "gaurav-koya",
+      "name": "Gaurav Koya",
+      "role": "Founder & President",
+      "track": "Vision & Leadership",
+      "image": "/images/team/gaurav-koya.png",
+      "focus": "A student, aspiring entrepreneur, and believer in thinking beyond the classroom. Gaurav is passionate about building ideas, exploring new opportunities, and creating things that make a difference. Through NextStep Hyderabad, he's working to help students discover opportunities, explore their interests, and take their next step forward.",
+      "quote": "Do so much work, it would be unreasonable for you not to be successful. — Alex Hormozi",
+      "status": "Founding Team",
+      "linkUrl": "https://www.instagram.com/nextstep.hyderabad/",
+      "linkLabel": "@nextstep.hyderabad"
+    },
+    {
+      "id": "shlok-jain",
+      "name": "Shlok Jain",
+      "role": "Head of Research",
+      "track": "Research & Curation",
+      "image": "/images/team/shlok-jain.png",
+      "motto": "Ad astra per aspera — To the stars through hardship.",
+      "focus": "It's my firm belief that everyone deserves a chance to win at life, and through struggle or through luck, everyone should strive for the stars. And I believe my skills support researching to help those in hardships to get through their problems and reach the stars.",
+      "status": "Founding Team",
+      "linkUrl": "https://www.instagram.com/nextstep.hyderabad/",
+      "linkLabel": "@nextstep.hyderabad"
+    },
+    {
+      "id": "content-head",
+      "name": "Content Creators & Head",
+      "role": "Editorial & Visual Storytelling",
+      "track": "Create · Priority",
+      "focus": "Turn opportunities into useful posts, carousels & Reels — we're actively looking for a Content Head to lead creative storytelling across NextStep Hyderabad.",
+      "quote": "Designed by Shlok because we NEED a content head guys apply pls",
+      "status": "Recruiting / Priority Need"
+    },
+    {
+      "id": "writers-researchers",
+      "name": "Writers & Opportunity Researchers",
+      "role": "Verification & Student Guides",
+      "track": "Research · Writing",
+      "focus": "Find & verify competitions, scholarships, research programs, and write clear guides, captions, and student resources for Hyderabad learners.",
+      "status": "Recruiting / Open Role"
+    },
+    {
+      "id": "social-community",
+      "name": "Social Media & Community",
+      "role": "Outreach & Growth",
+      "track": "Connect · Community",
+      "focus": "Help manage our Instagram and grow the community. No prior experience required — we care more about initiative, consistency, and wanting to make a difference.",
+      "status": "Recruiting / Open Role"
+    }
+  ]
+}

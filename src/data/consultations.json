@@ -1,0 +1,44 @@
+{
+  "eyebrow": "A little direction goes a long way",
+  "headline": "You don’t have to figure out the next step alone.",
+  "subcopy": "Student-led consultations can help you clarify what you’re looking for and turn a big goal into a more manageable plan.",
+  "formUrl": "https://forms.gle/p1QHFQGLBQKTi6BTA",
+  "options": [
+    {
+      "id": "mapping",
+      "label": "1-on-1 Opportunity Mapping",
+      "badge": "Free · Student-led",
+      "summary": "Not sure where to begin? Share your interests and goals. We’ll review your request and, where possible, help you identify a practical next step.",
+      "deliverables": [
+        "Explore opportunities related to your interests",
+        "Filter high-signal competitions, fellowships, and fairs",
+        "Match your current grade level to realistic timelines"
+      ],
+      "turnaround": "Reviewed by NextStep Hyderabad team"
+    },
+    {
+      "id": "roadmap",
+      "label": "Research & Competition Roadmap",
+      "badge": "Structured Plan",
+      "summary": "Turn a broad curiosity in AI, STEM, or entrepreneurship into a sequenced set of milestones from initial idea to submission.",
+      "deliverables": [
+        "Make a simple action plan",
+        "Figure out a useful place to start",
+        "Map pathways toward IRIS, IEEE, and national innovation challenges"
+      ],
+      "turnaround": "Tailored to Classes 6–12"
+    },
+    {
+      "id": "review",
+      "label": "Application & Eligibility Review",
+      "badge": "Pre-Submission Check",
+      "summary": "Avoid last-minute surprises by verifying requirements, team rules, and documentation before you commit hours to an application.",
+      "deliverables": [
+        "Understand eligibility and application details",
+        "Verify organiser rules, fees, and Hyderabad/online formats",
+        "Clarify presentation or prototype expectations"
+      ],
+      "turnaround": "Actionable checklist before deadlines"
+    }
+  ]
+}

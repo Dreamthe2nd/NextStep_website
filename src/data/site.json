@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "brand": "NextStep Hyderabad",
+    "tagline": "Discover. Apply. Grow.",
+    "founder": "Founded by Gaurav Koya",
+    "quote": "Discover what’s possible. Apply with confidence. Grow with every step.",
+    "instagramUrl": "https://www.instagram.com/nextstep.hyderabad/",
+    "instagramHandle": "@nextstep.hyderabad",
+    "consultationFormUrl": "https://forms.gle/p1QHFQGLBQKTi6BTA",
+    "teamFormUrl": "https://forms.gle/Fvr3aaoTQiGvvugUA",
+    "newsletterFormUrl": "",
+    "siteUrl": "https://nextstephyderabad.netlify.app"
+  },
+  "hero": {
+    "badge": "Built by students, for students",
+    "headlinePrefix": "Your next big thing",
+    "headlineItalic": "starts here.",
+    "mission": "Great opportunities are out there. Finding them shouldn't take hours—or depend on who you know. NextStep helps students discover what’s possible and take the next step with confidence.",
+    "tickerItems": ["Find your next step", "Learn something new", "Meet your people", "Make it happen"]
+  },
+  "pillars": [
+    { "id": "discover", "title": "Discover", "description": "Find opportunities worth your time.", "metricTag": "01 / CURATED SIGNAL" },
+    { "id": "apply", "title": "Apply", "description": "Know the details before you begin.", "metricTag": "02 / VERIFIED SPECS" },
+    { "id": "grow", "title": "Grow", "description": "Build skills, confidence and connections.", "metricTag": "03 / STUDENT NETWORK" }
+  ],
+  "about": {
+    "eyebrow": "The reason we started",
+    "headline": "Built by students, for students.",
+    "story": "NextStep Hyderabad was founded by Gaurav Koya with a simple idea: there are incredible opportunities out there for students—but finding them can take hours or depend on having the right connections.",
+    "vision": "Our long-term vision is a student opportunity network where people can discover, connect, collaborate and grow together. We’re starting small, learning as we go, and building with students in mind."
+  }
+}
