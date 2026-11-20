@@ -163,10 +163,10 @@ export function GoldMarginElements() {
                 local * 0.1
               ).toFixed(3)})`,
             }}
-            className="w-[68px] h-[68px] 2xl:w-[74px] 2xl:h-[74px] p-2 rounded-lg border border-[#d9b56d]/30 bg-[#09090b]/88 backdrop-blur-sm flex flex-col items-center justify-center gap-1.5 shadow-[0_6px_22px_rgba(0,0,0,0.65)] transition-transform duration-200 ease-out"
+            className="w-[76px] h-[76px] p-2.5 rounded-lg border border-[#d9b56d]/30 bg-[#09090b]/88 backdrop-blur-sm flex flex-col items-center justify-center gap-1.5 shadow-[0_6px_22px_rgba(0,0,0,0.65)] transition-transform duration-200 ease-out"
           >
             <SpecimenSvg id={item.id} strokeOffset={1 - local} />
-            <span className="font-mono text-[7px] leading-none tracking-[0.06em] text-[#d9b56d]/90 whitespace-nowrap">
+            <span className="font-mono text-[7px] leading-none tracking-[0.02em] text-[#d9b56d]/90 whitespace-nowrap">
               {item.tag}
             </span>
           </div>
