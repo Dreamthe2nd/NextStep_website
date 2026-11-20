@@ -55,88 +55,85 @@ export function Team() {
 
         {/* Unified Team Grid: 01–04 Leadership Cards + 05 Join Founding Team (2-col span on desktop) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-          {leaders.map((member, index) => (
-            <motion.div
-              key={member.id}
-              initial={reduced ? false : { opacity: 0, y: 32, scale: 0.97 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, amount: 0.15 }}
-              transition={{ ...springPop, delay: index * 0.07 }}
-              className="h-full"
-            >
-              <SpotlightCard
-                spotlightColor="#93c5fd"
-                intensity={0.12}
-                spotlightSize={270}
-                borderGlow={0.74}
-                grain={0.06}
-                className="group h-full flex flex-col justify-between rounded-2xl bg-[#121215]/80 backdrop-blur-md border border-white/[0.1] p-6"
+          {leaders.map((member, index) => {
+            const cardQuote = member.motto || member.quote;
+            return (
+              <motion.div
+                key={member.id}
+                initial={reduced ? false : { opacity: 0, y: 32, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ ...springPop, delay: index * 0.07 }}
+                className="h-full"
               >
-                <div className="relative z-10">
-                  <div className="flex items-start justify-between gap-3 mb-5">
-                    <div className="flex items-center gap-3.5">
-                      <div className="relative w-16 h-16 rounded-2xl overflow-hidden border border-[#93c5fd]/40 bg-zinc-900 shrink-0 shadow-[0_0_24px_rgba(96,165,250,0.2)] flex items-center justify-center">
-                        {member.image ? (
-                          <img
-                            src={member.image}
-                            alt={`${member.name} — ${member.role}`}
-                            className="w-full h-full object-cover object-top"
-                            loading="lazy"
-                          />
-                        ) : (
-                          <span
-                            aria-hidden="true"
-                            className="w-full h-full flex items-center justify-center font-serif italic text-xl text-[#e0f2fe] bg-[radial-gradient(circle_at_30%_25%,rgba(147,197,253,0.24),rgba(18,18,21,0.95)_72%)]"
-                          >
-                            {getInitials(member.name)}
-                          </span>
-                        )}
+                <SpotlightCard
+                  spotlightColor="#93c5fd"
+                  intensity={0.12}
+                  spotlightSize={270}
+                  borderGlow={0.74}
+                  grain={0.06}
+                  className="group h-full flex flex-col justify-between rounded-2xl bg-[#121215]/80 backdrop-blur-md border border-white/[0.1] p-6"
+                >
+                  <div className="relative z-10">
+                    <div className="flex items-start justify-between gap-3 mb-5">
+                      <div className="flex items-center gap-3.5">
+                        <div className="relative w-16 h-16 rounded-2xl overflow-hidden border border-[#93c5fd]/40 bg-zinc-900 shrink-0 shadow-[0_0_24px_rgba(96,165,250,0.2)] flex items-center justify-center">
+                          {member.image ? (
+                            <img
+                              src={member.image}
+                              alt={`${member.name} — ${member.role}`}
+                              className="w-full h-full object-cover object-top"
+                              loading="lazy"
+                            />
+                          ) : (
+                            <span
+                              aria-hidden="true"
+                              className="w-full h-full flex items-center justify-center font-serif italic text-xl text-[#e0f2fe] bg-[radial-gradient(circle_at_30%_25%,rgba(147,197,253,0.24),rgba(18,18,21,0.95)_72%)]"
+                            >
+                              {getInitials(member.name)}
+                            </span>
+                          )}
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-white tracking-[-0.025em]">
+                            {member.name}
+                          </h3>
+                          <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#93c5fd] mt-0.5">
+                            {member.role}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-white tracking-[-0.025em]">
-                          {member.name}
-                        </h3>
-                        <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#93c5fd] mt-0.5">
-                          {member.role}
-                        </p>
-                      </div>
+
+                      <span className="px-2.5 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] font-mono text-[10px] uppercase tracking-[0.12em] text-zinc-400 shrink-0">
+                        0{index + 1}
+                      </span>
                     </div>
 
-                    <span className="px-2.5 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] font-mono text-[10px] uppercase tracking-[0.12em] text-zinc-400 shrink-0">
-                      0{index + 1}
-                    </span>
+                    <p className="text-sm text-zinc-300 leading-relaxed">{member.focus}</p>
+
+                    {cardQuote && (
+                      <blockquote className="mt-4 pt-3.5 border-t border-white/[0.08] font-serif italic text-[15px] text-[#e6c98b]/95 leading-relaxed">
+                        “{cardQuote}”
+                      </blockquote>
+                    )}
                   </div>
 
-                  {member.motto && (
-                    <p className="font-serif italic text-lg text-[#e0f2fe] leading-snug mb-3">
-                      “{member.motto}”
-                    </p>
-                  )}
-
-                  <p className="text-sm text-zinc-300 leading-relaxed">{member.focus}</p>
-
-                  {member.quote && (
-                    <blockquote className="mt-4 pt-3.5 border-t border-white/[0.08] font-mono text-[11px] text-[#e6c98b]/90 leading-relaxed">
-                      “{member.quote}”
-                    </blockquote>
-                  )}
-                </div>
-
-                <div className="relative z-10 mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
-                  <span className="font-mono text-[11px] text-zinc-400">{member.status}</span>
-                  <a
-                    href={member.linkUrl || team.formUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.1em] text-white hover:text-[#93c5fd] transition-colors"
-                  >
-                    <span>{member.linkLabel || '@nextstep.hyderabad'}</span>
-                    <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
-                  </a>
-                </div>
-              </SpotlightCard>
-            </motion.div>
-          ))}
+                  <div className="relative z-10 mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+                    <span className="font-mono text-[11px] text-zinc-400">{member.status}</span>
+                    <a
+                      href={member.linkUrl || team.formUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.1em] text-white hover:text-[#93c5fd] transition-colors"
+                    >
+                      <span>{member.linkLabel || '@nextstep.hyderabad'}</span>
+                      <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
+                    </a>
+                  </div>
+                </SpotlightCard>
+              </motion.div>
+            );
+          })}
 
           {/* Card 05: Join the Founding Team (unified card language, spans 2 cols on md/lg) */}
           <motion.div
