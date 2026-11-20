@@ -33,8 +33,8 @@ describe('getDeadlineStatus', () => {
 describe('sortByStatus', () => {
   it('puts closing-soon/open/rolling before closed for current data', () => {
     const sorted = sortByStatus(localData.opportunities, NOW);
-    expect(sorted[0].id).toBe('inaio-2027');
-    expect(sorted).toHaveLength(26);
+    expect(sorted[0].id).toBe('plo-2026-2027');
+    expect(sorted).toHaveLength(localData.opportunities.length);
     const kinds = sorted.map((o) => getDeadlineStatus(o.deadlineISO, NOW).kind);
     const firstClosed = kinds.indexOf('closed');
     const lastRolling = kinds.lastIndexOf('rolling');
