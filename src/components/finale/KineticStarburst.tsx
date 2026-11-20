@@ -1,16 +1,41 @@
 import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
+import { registerGsap } from '@/lib/motion';
 
 const LETTERS = ['N', 'E', 'X', 'T', 'S', 'T', 'E', 'P'];
 
 export function KineticStarburst() {
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const wordmarkRef = useRef<HTMLDivElement | null>(null);
   const letterRefs = useRef<Array<HTMLSpanElement | null>>([]);
   const reduced = useReducedMotion();
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container || reduced) return;
+    registerGsap();
+
+    const ctx = gsap.context(() => {
+      if (wordmarkRef.current) {
+        gsap.fromTo(
+          wordmarkRef.current,
+          { scale: 0.9, opacity: 0.2, letterSpacing: '0.18em' },
+          {
+            scale: 1,
+            opacity: 1,
+            letterSpacing: '-0.04em',
+            ease: 'none',
+            scrollTrigger: {
+              trigger: container,
+              start: 'top 92%',
+              end: 'center 62%',
+              scrub: 0.6,
+            },
+          }
+        );
+      }
+    }, container);
 
     let mouseX = -9999;
     let mouseY = -9999;
@@ -56,6 +81,7 @@ export function KineticStarburst() {
     container.addEventListener('mouseleave', onLeave);
 
     return () => {
+      ctx.revert();
       if (rafId) cancelAnimationFrame(rafId);
       container.removeEventListener('mousemove', onMove);
       container.removeEventListener('mouseleave', onLeave);
@@ -68,12 +94,21 @@ export function KineticStarburst() {
       aria-label="NextStep"
       className="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 flex flex-col items-center justify-center overflow-hidden select-none"
     >
-      <p className="text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-500 mb-8">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 mx-auto max-w-2xl rounded-full blur-3xl opacity-55"
+        style={{
+          background:
+            'radial-gradient(circle at 50% 55%, rgba(200,169,110,0.14) 0%, rgba(147,197,253,0.12) 45%, transparent 72%)',
+        }}
+      />
+      <p className="relative text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-500 mb-8">
         Move cursor across the mark
       </p>
       <div
+        ref={wordmarkRef}
         aria-hidden="true"
-        className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 md:gap-8"
+        className="relative flex flex-wrap items-center justify-center gap-3 sm:gap-6 md:gap-8 will-change-transform"
       >
         {LETTERS.map((char, idx) => (
           <span
