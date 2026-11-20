@@ -7,11 +7,21 @@ import SpotlightCard from '@/components/reactbits/SpotlightCard';
 import { SectionIndex } from '@/components/ui/SectionIndex';
 import { KineticHeading } from '@/components/ui/KineticHeading';
 
+function getInitials(name: string): string {
+  return name
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? '')
+    .join('');
+}
+
 export function Team() {
   const { team } = useSiteData();
   const reduced = useReducedMotion();
 
-  const founders = team.members.filter((m) => Boolean(m.image));
+  const leaders = team.members.filter((m) => m.status === 'Founding Team');
+  const joinIndexLabel = `0${leaders.length + 1}`;
 
   return (
     <section
@@ -43,35 +53,44 @@ export function Team() {
           </a>
         </div>
 
-        {/* Clean 3-Card Layout: Card 1 Gaurav Koya | Card 2 Shlok Jain | Card 3 Join Founding Team */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
-          {founders.slice(0, 2).map((member, index) => (
+        {/* Unified Team Grid: 01–04 Leadership Cards + 05 Join Founding Team (2-col span on desktop) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+          {leaders.map((member, index) => (
             <motion.div
               key={member.id}
               initial={reduced ? false : { opacity: 0, y: 32, scale: 0.97 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, amount: 0.15 }}
-              transition={{ ...springPop, delay: index * 0.08 }}
+              transition={{ ...springPop, delay: index * 0.07 }}
               className="h-full"
             >
               <SpotlightCard
                 spotlightColor="#93c5fd"
                 intensity={0.12}
-                spotlightSize={260}
-                borderGlow={0.72}
+                spotlightSize={270}
+                borderGlow={0.74}
                 grain={0.06}
-                className="group h-full flex flex-col justify-between rounded-2xl bg-[#121215]/78 backdrop-blur-md border border-white/[0.1] p-6"
+                className="group h-full flex flex-col justify-between rounded-2xl bg-[#121215]/80 backdrop-blur-md border border-white/[0.1] p-6"
               >
                 <div className="relative z-10">
                   <div className="flex items-start justify-between gap-3 mb-5">
                     <div className="flex items-center gap-3.5">
-                      <div className="relative w-16 h-16 rounded-2xl overflow-hidden border border-[#93c5fd]/40 bg-zinc-900 shrink-0 shadow-[0_0_24px_rgba(96,165,250,0.2)]">
-                        <img
-                          src={member.image}
-                          alt={`${member.name} — ${member.role}`}
-                          className="w-full h-full object-cover object-top scale-115"
-                          loading="lazy"
-                        />
+                      <div className="relative w-16 h-16 rounded-2xl overflow-hidden border border-[#93c5fd]/40 bg-zinc-900 shrink-0 shadow-[0_0_24px_rgba(96,165,250,0.2)] flex items-center justify-center">
+                        {member.image ? (
+                          <img
+                            src={member.image}
+                            alt={`${member.name} — ${member.role}`}
+                            className="w-full h-full object-cover object-top"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <span
+                            aria-hidden="true"
+                            className="w-full h-full flex items-center justify-center font-serif italic text-xl text-[#e0f2fe] bg-[radial-gradient(circle_at_30%_25%,rgba(147,197,253,0.24),rgba(18,18,21,0.95)_72%)]"
+                          >
+                            {getInitials(member.name)}
+                          </span>
+                        )}
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-white tracking-[-0.025em]">
@@ -119,45 +138,52 @@ export function Team() {
             </motion.div>
           ))}
 
-          {/* Card 3: Join the Founding Team (Open Roles & Recruitment Call) */}
+          {/* Card 05: Join the Founding Team (unified card language, spans 2 cols on md/lg) */}
           <motion.div
             initial={reduced ? false : { opacity: 0, y: 32, scale: 0.97 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.15 }}
-            transition={{ ...springPop, delay: 0.16 }}
-            className="h-full"
+            transition={{ ...springPop, delay: leaders.length * 0.07 }}
+            className="h-full md:col-span-2 lg:col-span-2"
           >
             <SpotlightCard
-              spotlightColor="#60a5fa"
-              intensity={0.14}
+              spotlightColor="#93c5fd"
+              intensity={0.12}
               spotlightSize={270}
-              borderGlow={0.8}
+              borderGlow={0.74}
               grain={0.06}
-              className="group h-full flex flex-col justify-between rounded-2xl bg-[#121215]/82 backdrop-blur-md border border-[#93c5fd]/25 p-6"
+              className="group h-full flex flex-col justify-between rounded-2xl bg-[#121215]/80 backdrop-blur-md border border-white/[0.1] p-6"
             >
               <div className="relative z-10">
-                <div className="flex items-center justify-between gap-2 mb-5">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#60a5fa]/15 border border-[#93c5fd]/30 font-mono text-[10px] uppercase tracking-[0.14em] text-[#93c5fd]">
-                    <Sparkles className="w-3 h-3" aria-hidden="true" />
-                    <span>Open Roles</span>
-                  </span>
-                  <span className="px-2.5 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] font-mono text-[10px] uppercase tracking-[0.12em] text-zinc-400">
-                    03
+                <div className="flex items-start justify-between gap-3 mb-5">
+                  <div className="flex items-center gap-3.5">
+                    <div className="relative w-16 h-16 rounded-2xl overflow-hidden border border-[#93c5fd]/40 bg-[radial-gradient(circle_at_30%_25%,rgba(147,197,253,0.24),rgba(18,18,21,0.95)_72%)] shrink-0 shadow-[0_0_24px_rgba(96,165,250,0.2)] flex items-center justify-center">
+                      <Sparkles className="w-6 h-6 text-[#e0f2fe]" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white tracking-[-0.025em]">
+                        Build With Us
+                      </h3>
+                      <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#93c5fd] mt-0.5">
+                        Open Roles · Recruiting
+                      </p>
+                    </div>
+                  </div>
+
+                  <span className="px-2.5 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] font-mono text-[10px] uppercase tracking-[0.12em] text-zinc-400 shrink-0">
+                    {joinIndexLabel}
                   </span>
                 </div>
 
-                <h3 className="text-lg font-semibold text-white tracking-[-0.025em]">
-                  We’re Building the Founding Team
-                </h3>
-                <p className="mt-2 text-xs text-zinc-400 leading-relaxed">
-                  No prior experience required — we care most about initiative, consistency, and making a real difference for students.
+                <p className="text-sm text-zinc-300 leading-relaxed">
+                  No prior experience required — we care most about initiative, consistency, and making a real difference for Hyderabad students.
                 </p>
 
-                <ul className="mt-4 space-y-2.5">
+                <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {team.pillars.map((track) => (
                     <li
                       key={track.key}
-                      className="flex items-start gap-2.5 p-2.5 rounded-xl border border-white/[0.07] bg-white/[0.02]"
+                      className="flex items-start gap-2.5 p-3 rounded-xl border border-white/[0.08] bg-white/[0.02]"
                     >
                       <CheckCircle2 className="w-3.5 h-3.5 text-[#93c5fd] shrink-0 mt-0.5" aria-hidden="true" />
                       <div>
@@ -171,21 +197,18 @@ export function Team() {
                     </li>
                   ))}
                 </ul>
-
-                <p className="mt-3 font-mono text-[10px] text-[#e6c98b]/90">
-                  ★ Priority need: Content Head — designed by Shlok because we need you!
-                </p>
               </div>
 
-              <div className="relative z-10 mt-5 pt-4 border-t border-white/[0.08]">
+              <div className="relative z-10 mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between">
+                <span className="font-mono text-[11px] text-zinc-400">Open Applications</span>
                 <a
                   href={team.formUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-white text-[#09090b] text-xs font-semibold uppercase tracking-[0.1em] hover:bg-[#e0f2fe] transition-colors"
+                  className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.1em] text-white hover:text-[#93c5fd] transition-colors"
                 >
-                  <span>Apply for a founding role</span>
-                  <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
+                  <span>Apply for a role</span>
+                  <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
                 </a>
               </div>
             </SpotlightCard>
