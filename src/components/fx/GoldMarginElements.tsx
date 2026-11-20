@@ -34,7 +34,7 @@ function SpecimenSvg({ id, strokeOffset }: { id: string; strokeOffset: number })
 
   if (id === 'books') {
     return (
-      <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+      <svg viewBox="0 0 40 40" className="w-7 h-7 shrink-0" aria-hidden="true">
         <path d="M8 29h24v4H8zM10 23h20v6H10z" {...common} />
         <path d="M8 10c4-2 8-1 12 1 4-2 8-3 12-1v11c-4-2-8-1-12 1-4-2-8-3-12-1V10z" {...common} />
         <path d="M20 11v11" {...common} />
@@ -43,7 +43,7 @@ function SpecimenSvg({ id, strokeOffset }: { id: string; strokeOffset: number })
   }
   if (id === 'play') {
     return (
-      <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+      <svg viewBox="0 0 40 40" className="w-7 h-7 shrink-0" aria-hidden="true">
         {/* Origami paper plane + spinning top toy */}
         <path d="M6 15L34 8L24 27L19 19L6 15Z" {...common} />
         <path d="M19 19L34 8" {...common} />
@@ -53,7 +53,7 @@ function SpecimenSvg({ id, strokeOffset }: { id: string; strokeOffset: number })
   }
   if (id === 'football') {
     return (
-      <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+      <svg viewBox="0 0 40 40" className="w-7 h-7 shrink-0" aria-hidden="true">
         <circle cx="20" cy="20" r="13" {...common} />
         <polygon points="20,13 26,18 24,25 16,25 14,18" {...common} />
         <path d="M20 7v6M31 15l-5 3M28 30l-4-5M12 30l4-5M9 15l5 3" {...common} />
@@ -62,7 +62,7 @@ function SpecimenSvg({ id, strokeOffset }: { id: string; strokeOffset: number })
   }
   if (id === 'flask') {
     return (
-      <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+      <svg viewBox="0 0 40 40" className="w-7 h-7 shrink-0" aria-hidden="true">
         <path d="M16 7h8M17 7v9l-8 14a3 3 0 002.6 4.5h16.8A3 3 0 0031 30l-8-14V7" {...common} />
         <path d="M13 25c3-2 11 2 14 0" {...common} />
         <circle cx="21" cy="20" r="1.3" {...common} />
@@ -71,14 +71,14 @@ function SpecimenSvg({ id, strokeOffset }: { id: string; strokeOffset: number })
   }
   if (id === 'microscope') {
     return (
-      <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+      <svg viewBox="0 0 40 40" className="w-7 h-7 shrink-0" aria-hidden="true">
         <path d="M10 33h20M14 29h12M20 9l-5 10 4 2 5-10zM23 13c5 2 6 9 1 16" {...common} />
         <path d="M12 24h9" {...common} />
       </svg>
     );
   }
   return (
-    <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+    <svg viewBox="0 0 40 40" className="w-7 h-7 shrink-0" aria-hidden="true">
       <ellipse cx="20" cy="20" rx="14" ry="5.5" transform="rotate(30 20 20)" {...common} />
       <ellipse cx="20" cy="20" rx="14" ry="5.5" transform="rotate(-30 20 20)" {...common} />
       <ellipse cx="20" cy="20" rx="5.5" ry="14" {...common} />
@@ -163,10 +163,10 @@ export function GoldMarginElements() {
                 local * 0.1
               ).toFixed(3)})`,
             }}
-            className="w-12 py-2 px-1.5 rounded-xl border border-[#d9b56d]/25 bg-[#09090b]/85 backdrop-blur-sm flex flex-col items-center gap-1 shadow-[0_6px_22px_rgba(0,0,0,0.65)] transition-transform duration-200 ease-out"
+            className="w-[68px] h-[68px] 2xl:w-[74px] 2xl:h-[74px] p-2 rounded-lg border border-[#d9b56d]/30 bg-[#09090b]/88 backdrop-blur-sm flex flex-col items-center justify-center gap-1.5 shadow-[0_6px_22px_rgba(0,0,0,0.65)] transition-transform duration-200 ease-out"
           >
             <SpecimenSvg id={item.id} strokeOffset={1 - local} />
-            <span className="font-mono text-[7px] tracking-[0.14em] text-[#d9b56d]/85 whitespace-nowrap">
+            <span className="font-mono text-[7px] leading-none tracking-[0.06em] text-[#d9b56d]/90 whitespace-nowrap">
               {item.tag}
             </span>
           </div>
