@@ -102,26 +102,41 @@ export function Directory({
             </p>
           </div>
 
-          <div className="relative w-full lg:w-96 shrink-0">
-            <label htmlFor="directory-search" className="sr-only">
-              Search opportunities
-            </label>
-            <Search
-              className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
-              aria-hidden="true"
-            />
-            <input
-              id="directory-search"
-              ref={searchInputRef}
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search title, class, category..."
-              className="w-full pl-10 pr-16 py-2.5 rounded-xl bg-[#121215] border border-[var(--hairline)] text-sm text-[#faf8f2] placeholder:text-zinc-500 focus:outline-none focus:border-[#d9b56d]/50 transition-colors"
-            />
-            <kbd className="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-mono text-zinc-400 bg-white/[0.06] border border-white/[0.1] rounded">
-              {isMac ? '⌘K' : 'Ctrl K'}
-            </kbd>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 w-full lg:w-auto shrink-0">
+            <div
+              className="inline-flex items-center gap-2 px-3 py-2.5 rounded-xl bg-[#121215] border border-[var(--hairline)] shrink-0 self-start sm:self-auto"
+              aria-label={`${opportunities.length} opportunities tracked`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#93c5fd] shadow-[0_0_8px_rgba(147,197,253,0.75)]" aria-hidden="true" />
+              <span className="font-mono text-xs font-semibold tabular-nums text-white">
+                {opportunities.length}
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-zinc-400 whitespace-nowrap">
+                Opportunities tracked
+              </span>
+            </div>
+
+            <div className="relative w-full sm:w-72 lg:w-80 shrink-0">
+              <label htmlFor="directory-search" className="sr-only">
+                Search opportunities
+              </label>
+              <Search
+                className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
+                aria-hidden="true"
+              />
+              <input
+                id="directory-search"
+                ref={searchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search title, class, category..."
+                className="w-full pl-10 pr-16 py-2.5 rounded-xl bg-[#121215] border border-[var(--hairline)] text-sm text-[#faf8f2] placeholder:text-zinc-500 focus:outline-none focus:border-[#d9b56d]/50 transition-colors"
+              />
+              <kbd className="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-mono text-zinc-400 bg-white/[0.06] border border-white/[0.1] rounded">
+                {isMac ? '⌘K' : 'Ctrl K'}
+              </kbd>
+            </div>
           </div>
         </div>
 
